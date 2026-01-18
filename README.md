@@ -195,10 +195,10 @@ Background: Project Manager → Product Data Analyst
 ## 🎨 Dashboard Preview
 
 ### Dashboard 1 — Executive Overview
-![Dashboard 1](assets/projet_2_dashboard1.png)
+![Dashboard 1](assets/projet 2 dashboard1.png)
 
 ### Dashboard 2 — Uses & Habits
-![Dashboard 2](assets/projet_2_dashboard2.png)
+![Dashboard 2](assets/projet 2 dashboard2.png)
 
 ### Dashboard 3 — Retention & First 14 Days
-![Dashboard 3](assets/projet_2_dashboard3.png)
+![Dashboard 3](assets/projet 2 dashboard3.png)
