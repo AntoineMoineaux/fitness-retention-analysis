@@ -1,3 +1,5 @@
+![Status](https://img.shields.io/badge/status-completed-brightgreen)
+
 # Fitness Habit Formation & Retention Analytics
 
 **How early user behavior predicts long-term retention**
@@ -192,10 +194,11 @@ Background: Project Manager → Product Data Analyst
 
 ## 🎨 Dashboard Preview
 
-[Insert here the 3 screenshots of your Power BI dashboards]
+### Dashboard 1 — Executive Overview
+![Dashboard 1](assets/projet_2_dashboard1.png)
 
-**Dashboard 1**: Executive Overview
+### Dashboard 2 — Uses & Habits
+![Dashboard 2](assets/projet_2_dashboard2.png)
 
-**Dashboard 2**: Uses & Habits
-
-**Dashboard 3**: Retention & First 14 Days
+### Dashboard 3 — Retention & First 14 Days
+![Dashboard 3](assets/projet_2_dashboard3.png)
