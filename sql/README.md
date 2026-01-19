@@ -7,4 +7,3 @@ This folder contains the SQL queries used to build the key metrics and retention
 - 02_weekly_user_workouts.sql
 - 03_habit_threshold.sql
 - 04_retention_cohorts.sql
-
