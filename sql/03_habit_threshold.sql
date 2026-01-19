@@ -9,6 +9,7 @@
 -- Used in:
 -- Dashboard 2 (Uses & Habits) – users below vs reaching habit threshold
 
+-- Bucket users by habit threshold
 WITH weekly_user_workouts AS (
   SELECT
     w.user_id,
