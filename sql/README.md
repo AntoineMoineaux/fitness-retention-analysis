@@ -6,22 +6,13 @@ This folder contains the SQL queries used to build the key metrics and retention
 - 01_data_exploration.sql
 - 02_weekly_user_workouts.sql
 - 03_habit_threshold.sql
-- 04_retention_cohorts.sql
+- 04_cohort_retention.sql
 
-## 04_cohort_retention.sql
+## Query map (how SQL connects to the dashboards)
 
-Builds weekly retention cohorts based on signup month.
-
-### Key concepts
-- **Cohort** = month of user signup
-- **Week index** = number of weeks since signup
-- **Retention** = active users / cohort size
-
-### Used in
-- Power BI retention heatmap
-- Page: *Retention & First 14 Days*
-
-This query highlights:
-- Massive drop-off between W0 and W1
-- Retention stabilization after W2
-- Binary adoption pattern (users either adopt early or churn)
+| File | Purpose | Used in |
+|------|---------|---------|
+| 01_data_exploration.sql | Sanity checks: volumes, date coverage | Setup |
+| 02_weekly_user_workouts.sql | User-week grain table: workouts/week | Dashboard 2, Dashboard 3 |
+| 03_habit_threshold.sql | Bucket users by habit threshold (1 vs 2+) | Dashboard 2 |
+| 04_cohort_retention.sql | Cohort retention by signup month and week index | Dashboard 3 |
