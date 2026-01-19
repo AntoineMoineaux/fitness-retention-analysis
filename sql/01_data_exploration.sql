@@ -1,16 +1,25 @@
 -- 01_data_exploration.sql
--- Goal: sanity checks + basic exploration of users/workouts
+-- Purpose:
+-- Quick sanity checks on dataset size, coverage and key entities.
 
--- 1) Date ranges
--- SELECT MIN(signup_date), MAX(signup_date) FROM users;
--- SELECT MIN(workout_date), MAX(workout_date) FROM workouts;
+-- Used in:
+-- Project setup & data validation (not a dashboard visual)
 
--- 2) Basic volumes
--- SELECT COUNT(*) AS users FROM users;
--- SELECT COUNT(*) AS workouts FROM workouts;
+-- Table sizes
+SELECT 'users' AS table_name, COUNT(*) AS rows FROM users
+UNION ALL
+SELECT 'workouts', COUNT(*) FROM workouts
+UNION ALL
+SELECT 'events', COUNT(*) FROM events
+UNION ALL
+SELECT 'subscriptions', COUNT(*) FROM subscriptions;
 
--- 3) Workouts per user distribution (rough)
--- SELECT user_id, COUNT(*) AS workouts_cnt
--- FROM workouts
--- GROUP BY user_id
--- ORDER BY workouts_cnt DESC;
+-- Date coverage (workouts)
+SELECT
+  MIN(workout_date) AS min_workout_date,
+  MAX(workout_date) AS max_workout_date
+FROM workouts;
+
+-- Users with at least 1 workout
+SELECT COUNT(DISTINCT user_id) AS users_with_workout
+FROM workouts;
