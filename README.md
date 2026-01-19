@@ -156,8 +156,7 @@ The goal is not data realism, but realistic **product behavior patterns**.
 
 ## 🛠️ Technical Stack
 
-- **SQL**: data extraction, cohort analysis, KPI computation
- SQL queries used for cohort analysis and habit metrics are available in the `/sql` folder
+- **SQL**: data extraction, cohort analysis, KPI computation. SQL queries used for cohort analysis and habit metrics are available in the `/sql` folder
 - **Power BI**: Data modeling, DAX measures, creation of 3 narrative dashboards
 - **Product approach**: North Star metric definition, funnel analysis, action prioritization
 
