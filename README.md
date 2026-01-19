@@ -1,6 +1,6 @@
 ![Status](https://img.shields.io/badge/status-completed-brightgreen)
 ![Tool](https://img.shields.io/badge/Tool-Power%20BI-yellow)
-![SQL](https://img.shields.io/badge/SQL-PostgreSQL-blue)
+![SQL](https://img.shields.io/badge/SQL-SQLite%20%2F%20SQLiteStudio-blue)
 
 # Fitness Habit Formation & Retention Analytics
 
@@ -144,7 +144,7 @@ Maximize the number of users reaching **≥2 workouts within the first 14 days**
 
 ## 🛠️ Technical Stack
 
-- **SQL**: Data extraction and preparation, cohort calculations, KPI definition
+- **SQL**: data extraction, cohort analysis, KPI computation
 - **Power BI**: Data modeling, DAX measures, creation of 3 narrative dashboards
 - **Product approach**: North Star metric definition, funnel analysis, action prioritization
 
