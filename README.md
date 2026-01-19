@@ -1,4 +1,6 @@
 ![Status](https://img.shields.io/badge/status-completed-brightgreen)
+![Tool](https://img.shields.io/badge/Tool-Power%20BI-yellow)
+![SQL](https://img.shields.io/badge/SQL-PostgreSQL-blue)
 
 # Fitness Habit Formation & Retention Analytics
 
