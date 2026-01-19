@@ -1,0 +1,19 @@
+-- 03_habit_threshold.sql
+-- Goal: identify users reaching the habit threshold (>= 2 workouts/week)
+
+-- Example:
+-- WITH weekly AS (
+--   SELECT
+--     user_id,
+--     strftime('%Y-%W', workout_date) AS year_week,
+--     COUNT(*) AS workouts_per_week
+--   FROM workouts
+--   GROUP BY user_id, year_week
+-- )
+-- SELECT
+--   year_week,
+--   COUNT(DISTINCT CASE WHEN workouts_per_week >= 2 THEN user_id END) AS users_2plus_workouts,
+--   COUNT(DISTINCT user_id) AS active_users
+-- FROM weekly
+-- GROUP BY year_week
+-- ORDER BY year_week;
