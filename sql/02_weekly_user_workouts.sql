@@ -10,6 +10,7 @@
 -- Dashboard 2 (Uses & Habits) – distribution of workouts/week
 -- Dashboard 3 – early engagement intensity signals
 
+-- Compute workouts per user per week
 SELECT
   w.user_id,
   strftime('%Y-%W', w.workout_date) AS year_week,
