@@ -142,11 +142,47 @@ Maximize the number of users reaching **≥2 workouts within the first 14 days**
 
 ---
 
+## 🧩 Data model & assumptions
+
+- Synthetic dataset simulating a fitness mobile app
+- One row per workout event
+- Weekly aggregation at user level
+- Users with no activity in a given week are considered inactive
+- Retention measured as user having ≥1 workout in the target week
+
+The goal is not data realism, but realistic **product behavior patterns**.
+
+---
+
 ## 🛠️ Technical Stack
 
 - **SQL**: data extraction, cohort analysis, KPI computation
 - **Power BI**: Data modeling, DAX measures, creation of 3 narrative dashboards
 - **Product approach**: North Star metric definition, funnel analysis, action prioritization
+
+---
+
+## 🧠 Key SQL concepts used
+
+- Window functions for cohort analysis
+- Weekly user aggregation
+- Conditional metrics (habit threshold logic)
+- Retention calculations by cohort and week offset
+- North Star metric computation
+
+SQL was written manually using **SQLiteStudio**.
+
+---
+
+## 🔮 What I would do next
+
+If this were a real product, next steps would include:
+- A/B testing onboarding flows to push the second workout
+- Segmentation by acquisition channel
+- Tracking time between first and second workout as a core metric
+- Experimenting with habit nudges (notifications, streaks)
+
+This project focuses on diagnosis, not experimentation.
 
 ---
 
