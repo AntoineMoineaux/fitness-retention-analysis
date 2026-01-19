@@ -204,3 +204,16 @@ Background: Project Manager → Product Data Analyst
 
 ### Dashboard 3 — Retention & First 14 Days
 ![Dashboard 3](assets/projet-2-dashboard3.png)
+
+## 🔎 How to explore the dashboards
+
+This project is designed to be read like a product story.
+
+Recommended reading order:
+1. **Executive Overview**  understand the business context and North Star
+2. **Uses & Habits**  identify the critical habit threshold
+3. **Retention & First 14 Days**  diagnose where retention is lost
+
+Each dashboard answers one key product question and ends with
+actionable recommendations.
+
