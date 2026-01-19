@@ -1,14 +1,19 @@
 -- 02_weekly_user_workouts.sql
--- Goal: build user-week aggregation (workouts per week)
+-- Purpose:
+-- Compute workouts per user per week (user-week grain).
+-- Used as the base table for habit threshold segmentation in Power BI.
 
--- Example logic (adapt to your schema):
--- 1) Create year_week from workout_date
--- 2) Count workouts per user per week
+-- Output:
+-- user_id | year_week | workouts_per_week
 
--- SELECT
---   user_id,
---   strftime('%Y-%W', workout_date) AS year_week,
---   COUNT(*) AS workouts_per_week
--- FROM workouts
--- GROUP BY user_id, year_week
--- ORDER BY year_week, user_id;
+-- Used in:
+-- Dashboard 2 (Uses & Habits) – distribution of workouts/week
+-- Dashboard 3 – early engagement intensity signals
+
+SELECT
+  w.user_id,
+  strftime('%Y-%W', w.workout_date) AS year_week,
+  COUNT(*) AS workouts_per_week
+FROM workouts w
+GROUP BY w.user_id, year_week
+ORDER BY year_week, w.user_id;
